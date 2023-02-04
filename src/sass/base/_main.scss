@@ -40,9 +40,14 @@ main {
 .anime-list {
     padding-block-start: 1rem;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(9.375rem, 1fr));
     grid-gap: 1rem;
     place-items: center;
+
+
+    @include bp.md {
+        grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+    }
 
     .card {
 
@@ -55,7 +60,7 @@ main {
             width: 8rem;
 
             @include bp.md {
-                width: 12.5rem;
+                width: 13rem;
                 min-height: 10rem;
 
             }
@@ -238,7 +243,11 @@ footer {
 
 
 .Toastify__close-button--light {
-    font-size: 1rem;
+    font-size: 0.7rem;
+
+    @include bp.md {
+        font-size: 1rem;
+    }
 
     &>svg {
         font-size: 4rem;
@@ -462,11 +471,31 @@ footer {
 }
 
 .Toastify__toast-theme--light {
-    margin-top: 42px;
     background-color: #252525;
     color: var(--green);
+    // position: fixed;
+    // top: 0;
+    // right: 0;
 }
 
+
+.Toastify__toast-container {
+    font-size: 0.7rem;
+    width: 50vw;
+
+
+    position: fixed;
+    top: 10%;
+    left: 50%;
+
+    @include bp.md {
+        left: 80%;
+        right: 0;
+        font-size: 1rem;
+        width: 20vw;
+        right: 0;
+    }
+}
 
 .pageBtns {
     padding: var(--spacing-button-md);

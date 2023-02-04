@@ -4,14 +4,14 @@
     justify-content: center;
     align-items: center;
     min-height: 80vh;
-    animation: move 30s linear alternate-reverse infinite ;
+    /* animation: move 30s linear alternate-reverse infinite ; */
 }
 
 .loading-text{
     position: absolute;
     top: 40%;
     left: 50%;
-    animation: move 30s linear alternate-reverse  infinite;
+    /* animation: move 30s linear alternate-reverse  infinite; */
   }
 .youtube{
     position: relative;
@@ -64,11 +64,12 @@
   }
 
 
-  @keyframes move {
+  /* @keyframes move {
+    
     0%{
       transform: translateX(-30vw)
     }
 
 
     100% { transform: translateX(30vw)}
-  }
+  } */
