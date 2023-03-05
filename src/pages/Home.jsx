@@ -74,7 +74,6 @@ const Home = () => {
     }
     return (
         <>
-
             {loading && loading2 ?
                 <>
                     {
@@ -84,10 +83,7 @@ const Home = () => {
                                 <MainContent animeList={animeList} />
                             </>
                             :
-                            <>
-
                                 <MainContent animeList={animeList} />
-                            </>
                     }
                 </>
                 : <Spinner />
@@ -96,7 +92,9 @@ const Home = () => {
             {
                 loading && loading2 ?
                     <div className="pageBtns">
+
                         <PageNation pageInfo={pageInfo} currentPage={currentPage} prevPage={prevPage} nextPage={nextPage} />
+                        
                     </div>
                     : null
             }
