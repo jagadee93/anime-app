@@ -29,7 +29,6 @@ export const AnimeInfo = () => {
             {
                 loading ?
                     <>
-
                         <div className='--flex-col'>
                             <img className="d-img" src={animeData.images.jpg.large_image_url} alt={animeData.title} />
                             <div className="details-data">
@@ -44,7 +43,7 @@ export const AnimeInfo = () => {
                         </div>
                         <YoutubePlayer url={animeData?.trailer?.embed_url} />
 
-                        <p> <span className='--text--green'>Synopsis</span>:{animeData?.synopsis}</p>
+                        <p className='mobile--font' > <span className='--text--green'>Synopsis</span>:{animeData?.synopsis}</p>
 
                     </>
                     : <Spinner />

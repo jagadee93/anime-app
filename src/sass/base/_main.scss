@@ -50,7 +50,6 @@ main {
     }
 
     .card {
-
         animation: all 1s linear;
         position: relative;
         overflow: hidden;
@@ -68,6 +67,8 @@ main {
         }
 
         .title-text {
+            font-size: 1rem;
+
             text-align: center;
             position: absolute;
             bottom: 0;
@@ -75,7 +76,9 @@ main {
             color: var(--green);
             text-decoration: underline;
 
+
             @include bp.md {
+                font-size: 1.3rem;
                 opacity: 0;
                 text-decoration: none;
                 color: var(--light);
@@ -122,12 +125,27 @@ footer {
 }
 
 
+.card:hover {
+    @include bp.md {
+        transform: initial;
+    }
+
+    transform: scale(1.1);
+    transition: all 0.5s ease-in-out;
+}
+
+
+
 
 .info {
     padding: 2rem;
 
     @include bp.md {
         padding: 0;
+    }
+
+    p {
+        padding-block-end: 1rem;
     }
 
     img {
@@ -322,6 +340,7 @@ footer {
     height: 30%;
     width: 100%;
     font-size: 1.2rem;
+
     font-weight: 700;
     color: #FFFC;
     padding: 1rem 0.7rem;
@@ -430,7 +449,6 @@ footer {
     @include bp.md {
         width: 80vw;
         font-size: 1.4rem;
-
     }
 
     a {
@@ -578,13 +596,9 @@ footer {
 }
 
 .--flex-col {
-
     @include bp.md {
         display: flex;
         gap: 1rem;
         padding-top: 2rem;
-
     }
-
-
 }
