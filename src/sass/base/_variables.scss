@@ -1,0 +1,51 @@
+:root {
+    font-family: 'Raleway', Helvetica, Arial, sans-serif;
+    --sm: 37.5em;
+    --md: 48em;
+    --lg: 64em;
+    --xl: 75em;
+    --green: #5da93c;
+    --bg-color: #150a0a;
+    --bg-color2: #1D1D1D;
+    --bg-color3: #252525;
+    --light: #fff;
+    --spacing-button-md: 1em;
+    --spacing-button-sm: 0.5em;
+    --spacing-button-lg: 2em;
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 2rem;
+    --header-height: 4.5rem;
+    --bg: rgb(255, 255, 255);
+    --bg2: rgb(0, 0, 0);
+    --text: rgb(15, 15, 15);
+    --text2: rgb(240, 240, 240);
+    --primary: rgb(22, 210, 247);
+    --spacing--sm: 0.2rem;
+
+
+}
+
+
+
+@mixin btn {
+    font-weight: 500;
+    color: var(--green);
+    border: 2px solid var(--green);
+    background: initial;
+    padding: var(--spacing-button-sm) var(--spacing-button-md);
+    border-radius: calc(var(--spacing-button-sm)/2);
+    cursor: pointer;
+    box-shadow: 0 0 0.5em 0 var(--green);
+    height: 3.1em;
+    display: inline-block;
+
+    &:active {
+        transform: scale(0.98);
+        border-radius: 0;
+    }
+
+    &:hover {
+        box-shadow: 0 0 0.75em 0 var(--green);
+    }
+}

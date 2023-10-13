@@ -1,0 +1,46 @@
+.mobile--font {
+    @media screen and (max-width: 768px) {
+        font-size: 0.8rem;
+    }
+}
+
+
+
+
+.font-13 {
+    font-size: 1rem;
+}
+
+.row {
+    display: flex;
+}
+
+.fixed-row {
+    display: flex;
+}
+
+.gap-1 {
+    gap: 1em;
+}
+
+.mtb-1 {
+    margin: 1em 0;
+}
+
+.center {
+    text-align: center;
+}
+
+.cta {
+    font-size: 1.125rem;
+    padding: 0.7em 1.5em;
+    border-radius: 0.5rem;
+    background-color: var(--green);
+    cursor: pointer;
+    animation: all 1s linear;
+
+    &:hover,
+    &:focus {
+        background-color: #6ea257;
+    }
+}
